@@ -1,0 +1,130 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="utf-8">
+  <title>My Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+    <h1 id="title">My Survey Form</h1>
+    <p id="description">Thank you for taking your time</p></header>
+    <form method="post" action='' id="survey-form">
+    <div class="form-group">
+      <fieldset>
+        <label for="name" id="name-label">Name</label><input id="name" type="text" placeholder="Enter your name" required />
+        <label for="email" id="email-label">Email</label><input id="email" type="email" placeholder="Enter your Email" required />
+        <label for="number" id="number-label">Age</label><input id="number" type="number" min="13" max="120" placeholder="Enter your age" />
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+        </select>
+        </fieldset>
+        <fieldset>
+        <label for="definitely">Would you recommend our site to a friend?</label>
+        <input id="definitely" value="definitely" type="radio" name="recommend" class="inline" /> Definitely
+        <label for="maybe"></label>
+        <input id="maybe" value="maybe" type="radio" name="recommend" class="inline" /> Maybe
+        <label for="not-sure"></label>
+        <input id="not-sure" value="not-sure"  type="radio" name="recommend" class="inline" /> Not sure
+        </fieldset>
+        <fieldset>
+          <label for="videos">What would you like to see improved?</label>
+        <input id="videos" type="checkbox" name="improve" value="videos" class="inline" /> Videos
+        <label for="wiki"></label>
+        <input id="wiki" type="checkbox" name="improve" value="wiki" class="inline" /> Wiki
+        <label for="forum"></label>
+        <input id="forum" type="checkbox" name="improve" value="forum" class="inline" /> Forum
+        </fieldset>
+        <fieldset>
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+       <label for="submit"></label>
+       <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+body {
+  background-color: rgba(15,155,155,65%);
+  font-family: sans-serif;
+  font-size: 16px;
+  color: rgba(255,240,220,90%);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+h1, p {
+  margin: 2px auto;
+  text-align: center;
+}
+h1 {
+  color: #0a0a23;}
+p {
+  color: rgba(27, 27, 50, 0.8);}
+form {
+  width: 75%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 1px auto;
+  background: rgba(27, 27, 50, 0.8);
+  padding: 10px 3px;
+  border-radius: 3px;
+}
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(15,105,105,65%);
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 18px;
+  background-color: rgba(15,105,115,75%);
+  border-color: white;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+** end of undefined **
+
